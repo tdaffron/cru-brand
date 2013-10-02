@@ -1,0 +1,55 @@
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/**
+ * Sets up the basic variables for Cru branding for easy usage
+ */
+
+
+/**
+ * Cool Colors
+ */
+$cru-deep-blue: #007398;
+$cru-bright-blue: #3eb1c8;
+
+/**
+ * Warm Colors
+ */ 
+$cru-gold: #f9b625;
+$cru-orange: #dd7d1b;
+
+/** 
+ * Grays
+ */ 
+$cru-gray: #666062;
+
+$gray-darker: #333333;
+$gray-dark: darken($cru-gray, 10%);
+$gray: $cru-gray;
+$gray-light: lighten($cru-gray, 50%);
+$gray-lighter: lighten($cru-gray, 58%);
+
+
+
+
+
+/*------------------------------------*\
+    $COLOR USAGE
+\*------------------------------------*/
+/*
+* Primary Colors 
+*/
+$cru-primary: $cru-gold;
+$cru-gray: $cru-gray;
+$white: #ffffff;
+
+/*
+* Primary Colors
+*/
+$cru-secondary: $cru-orange;
+
+/**
+ * Accent Colors
+ */
+$cru-accent-light: $cru-bright-blue;
+$cru-accent-dark: $cru-deep-blue;
