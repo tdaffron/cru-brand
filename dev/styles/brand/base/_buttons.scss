@@ -1,0 +1,65 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
+.button{
+	@extend .btn;
+	@extend %transition-default;
+	/**
+	 * The no select class applies 'user-select: none' and its vendor prefixes.
+	 * This prevents the user from dragging the link attatched to the button,
+	 * making this especially useful with submit variants
+	 */
+	@extend %no-select;
+	
+	background-color: $gray-light;
+	color: $gray-dark;
+	font-weight: 500;
+	text-align: center;
+	text-transform: capitalize;
+	letter-spacing: 0.0625em /* 1px letter spacing */;
+	
+	border: 2px solid lighten($cru-gray, 45%);
+	
+	overflow: hidden;
+	
+	&:hover{
+		background-color: lighten($cru-gray, 45%);	
+	}	
+}
+
+
+
+
+/*------------------------------------*\
+    $BUTTON SIZES
+\*------------------------------------*/
+
+.button--small{
+	margin-right: em(18) /* 18px */;
+	
+	padding-left: em(18) /* 18px */; 
+	padding-right: em(18) /* 18px */;
+	
+	line-height: 2.7;
+}
+
+.button--mid{
+	
+}
+
+.button--large{
+	
+}
+
+
+
+
+
+/*------------------------------------*\
+    $BUTTON COLORS
+\*------------------------------------*/
+
+.button--gold{
+	@extend .gold;
+}

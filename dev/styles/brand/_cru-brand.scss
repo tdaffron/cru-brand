@@ -1,0 +1,205 @@
+/*------------------------------------*\
+    CRU BRAND
+\*------------------------------------*/
+
+@import "defaults";
+@import "base/vars";
+
+@import "base/mixins";
+@import "base/helpers";
+
+
+@import "base/fonts";
+@import "base/scaffolding";
+@import "base/type";
+@import "base/buttons";
+
+body{
+	background-color: $gray-lighter;
+}
+
+.wrapper{
+	@extend .cf;
+	
+	margin-bottom: em(72);
+	
+	&:last-child{
+		padding-bottom: 4rem;
+	}
+}
+
+    .site-footer .wrapper, .swatches{
+	    padding-top: 0;
+		border-bottom: none;
+    }
+
+	.type{
+		margin: 0 auto;
+	}
+
+
+.hr{
+	clear: both;
+	display: block;
+	height: 0;
+	border-top: 1px solid rgba(6,8,8,0.12);
+	border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+.grid{
+	margin-left: 0;
+}
+
+.grid__item{
+	padding: 0;
+	float: left;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.color-name{
+	margin-bottom: 0.75rem;
+}
+
+.gold{
+	background-color: $cru-primary;
+}
+
+.white{
+	background-color: #ffffff;
+}
+
+.orange{
+	background-color: $cru-secondary;
+}
+
+.blue-deep{
+	background-color: $cru-accent-dark;
+}
+
+.blue-bright{
+    background-color: $cru-accent-light;
+}
+
+.gray{
+    background-color: $cru-gray;
+}
+
+.gray-darker{
+    background-color: $gray-darker;
+}
+
+.gray-dark{
+	background-color: $gray-dark;
+}
+
+.gray-light{
+	background-color: $gray-light;	
+}
+
+.gray-lighter{
+	background-color: $gray-lighter;
+}
+
+
+
+.color-block{
+	display: block;
+	float: left;
+	text-align: center;
+	color: #fff;
+}
+
+	.color-block.primary{
+		height: 200px;
+	}
+	
+	.color-block.secondary{
+		height: 100px;
+		
+		h3, h4{
+			display: inline;
+		}
+	}
+	
+	.color-block.accent{
+		height: 45px;
+		
+		h3, h4{
+			display: inline;
+		}
+		
+		.holder{
+			padding-top: 10px;
+		}	
+	}
+
+
+.holder{
+	padding-top: 30px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.text-dark{
+	color: $gray-darker;
+}
+
+.hex{
+	letter-spacing: 1.5px;
+	@extend %numeral;
+}
+
+.palate{
+	@extend .cf;
+}
+
+.mt3{
+	margin-top: 18px;
+}
+
+.area-main{
+	@extend .cf;
+	
+	padding-top: 18px;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.site-footer{
+	background-color: $gray-lighter;
+	position: fixed;
+	bottom: 0;
+	
+	padding: 1.4%;
+		
+		
+}
+
+@media all and (min-width: 780px){
+	.pb8{
+		padding-bottom: em(48);
+	}
+}
+
+
+
+@media all and (max-width: 780px){
+    .color-name{
+	    display: none !important;
+    }
+
+
+}
+
+@media all and (max-width: 500px){
+    .hex{
+	    display: none !important;
+    }
+
+
+}
+
+
+

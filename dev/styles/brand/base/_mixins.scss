@@ -1,0 +1,10 @@
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+$browser-default: 16; // Default
+
+@function em($pixels, $default: $browser-default){
+  @return #{$pixels/$default}em
+}
+

@@ -6,6 +6,19 @@
  */
 
 
+
+
+/*------------------------------------*\
+    $INITIAL VARIABLE SETUP
+\*------------------------------------*/
+/**
+ * Font Families
+ */
+
+$freight-sans-pro:'Freight Sans Pro';
+$helvetica-neue: 'Helvetica Neue';
+$fallback: Arial, Helvetica, sans-serif;
+
 /**
  * Cool Colors
  */
@@ -34,8 +47,24 @@ $gray-lighter: lighten($cru-gray, 58%);
 
 
 /*------------------------------------*\
+    $FONT USAGE
+\*------------------------------------*/
+$base-font-family: $freight-sans-pro $helvetica-neue $fallback;
+$base-font-weight: 300;
+
+$numeral-font-family: $helvetica-neue $fallback;
+
+
+
+/*------------------------------------*\
     $COLOR USAGE
 \*------------------------------------*/
+/*
+* Body Font Color
+*/
+$base-font-color: $gray-darker;
+
+
 /*
 * Primary Colors 
 */
@@ -44,7 +73,7 @@ $cru-gray: $cru-gray;
 $white: #ffffff;
 
 /*
-* Primary Colors
+* Secondary Colors
 */
 $cru-secondary: $cru-orange;
 

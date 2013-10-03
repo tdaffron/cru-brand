@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    $HELPERS
+\*------------------------------------*/
+
+%transition-default{
+	@include vendor(transition, all .2s ease);
+}
+
+%no-select{
+	@include vendor(user-select, none);
+}
+
+%numeral{
+	font-family: $numeral-font-family;
+}
